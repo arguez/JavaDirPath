@@ -18,7 +18,7 @@ public class DirectoryPath {
      * Discovers absolute path
      */
     private void setCurrentPath() {
-        currentPath = this.getClass().getClassLoader().getResource(CLASSNAME).getPath();    //this class locatio
+        currentPath = this.getClass().getClassLoader().getResource(CLASSNAME).getPath();    //this class location
         currentPath = currentPath.substring(currentPath.indexOf("/"));                      //removes preceiding "file:"
         currentPath = currentPath.replaceAll("%20", " ");                                   //removes blank space encoding
 		
